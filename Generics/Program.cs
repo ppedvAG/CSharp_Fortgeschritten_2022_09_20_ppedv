@@ -32,7 +32,7 @@ public class DataStore<T> :
 		return data[idx];
 	}
 
-	public void PrintType<MyType>() //Generic bei Methode
+	public void PrintType<MyType>() where MyType : class //Generic bei Methode, Constraint bei Methode
 	{
 		Console.WriteLine(typeof(MyType)); //Typ Objekt vom Generic holen
 		Console.WriteLine(nameof(MyType)); //String aus MyType erzeugen ("MyType")
