@@ -157,11 +157,31 @@ internal class Program
 		//Group zu einem Dictionary konvertieren
 		Dictionary<FahrzeugMarke, List<Fahrzeug>> groupDict = group.ToDictionary(e => e.Key, e => e.ToList());
 
+		//Auf jedes Element einer Liste eine Funktion anwenden (mit optionalem Aggregator)
 		string output = fahrzeuge.Aggregate(string.Empty, (agg, fzg) => agg + $"Das Fahrzeug hat die Marke {fzg.Marke} und kann maximal {fzg.MaxGeschwindigkeit} fahren.\n");
 
 		Console.WriteLine(output);
 
+		//Liste aufsummieren mit Aggregate
 		fahrzeuge.Aggregate(0, (agg, fzg) => agg + fzg.MaxGeschwindigkeit);
+
+		//Alle Audis filtern mit Aggregate
+		fahrzeuge.Aggregate(new List<Fahrzeug>(), (agg, fzg) =>
+		{
+			if (fzg.Marke == FahrzeugMarke.Audi)
+				agg.Add(fzg);
+			return agg;
+		});
+
+		//GroupBy mit ToDictionary über Aggregate
+		Dictionary<FahrzeugMarke, List<Fahrzeug>> aggDict = fahrzeuge.Aggregate(
+			new Dictionary<FahrzeugMarke, List<Fahrzeug>>(), (agg, fzg) =>
+			{
+				if (!agg.ContainsKey(fzg.Marke))
+					agg.Add(fzg.Marke, new());
+				agg[fzg.Marke].Add(fzg);
+				return agg;
+			});
 
 		List<List<Fahrzeug>> fahrzeugs = new();
 		fahrzeugs.Add(fahrzeuge);
