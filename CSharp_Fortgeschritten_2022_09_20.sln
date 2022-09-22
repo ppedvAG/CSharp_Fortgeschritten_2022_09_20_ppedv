@@ -13,13 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics", "Generics\Generi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serialisierung", "Serialisierung\Serialisierung.csproj", "{7ABCC3AA-028D-4A40-8344-44D0DE1157FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multithreading", "Multithreading\Multithreading.csproj", "{397B6049-997D-4FB2-8D29-78999E336767}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multithreading", "Multithreading\Multithreading.csproj", "{397B6049-997D-4FB2-8D29-78999E336767}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multitasking", "Multitasking\Multitasking.csproj", "{E73BEBBB-C1FF-4369-98AE-EEE7B26A18DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multitasking", "Multitasking\Multitasking.csproj", "{E73BEBBB-C1FF-4369-98AE-EEE7B26A18DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwait", "AsyncAwait\AsyncAwait.csproj", "{E9438DFF-E53F-46DC-ADA3-A0E36FAB0C67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncAwait", "AsyncAwait\AsyncAwait.csproj", "{E9438DFF-E53F-46DC-ADA3-A0E36FAB0C67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwaitWPF", "AsyncAwaitWPF\AsyncAwaitWPF.csproj", "{36DC67D5-A380-4E5E-A8BC-A8F818BAD1AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncAwaitWPF", "AsyncAwaitWPF\AsyncAwaitWPF.csproj", "{36DC67D5-A380-4E5E-A8BC-A8F818BAD1AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqErweiterungsmethoden", "LinqErweiterungsmethoden\LinqErweiterungsmethoden.csproj", "{50F88A53-DC31-4270-8ED5-4C4A3BE94DE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{36DC67D5-A380-4E5E-A8BC-A8F818BAD1AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36DC67D5-A380-4E5E-A8BC-A8F818BAD1AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36DC67D5-A380-4E5E-A8BC-A8F818BAD1AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50F88A53-DC31-4270-8ED5-4C4A3BE94DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50F88A53-DC31-4270-8ED5-4C4A3BE94DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50F88A53-DC31-4270-8ED5-4C4A3BE94DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50F88A53-DC31-4270-8ED5-4C4A3BE94DE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
