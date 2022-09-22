@@ -30,12 +30,10 @@ public class LabCode
 			new Fahrzeug(10, 217, FahrzeugMarke.Audi),
 			new Fahrzeug(11, 125, FahrzeugMarke.Audi)
 		};
-
-		fahrzeuge.Where(e => e.MaxGeschwindigkeit >= 100);
 	}
 }
 
-[DebuggerDisplay("ID: {ID} - {typeof(Fahrzeug).FullName}")]
+[DebuggerDisplay("ID: {ID}, Marke: {Marke}, Geschwindigkeit: {MaxGeschwindigkeit} - {typeof(Fahrzeug).FullName}")]
 public class Fahrzeug
 {
 	public int ID;
